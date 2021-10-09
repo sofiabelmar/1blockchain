@@ -15,8 +15,10 @@
     "eslint-plugin-import": "^2.24.2",
     "nodemon": "^2.0.12"
   },
-
   "scripts": {
     "start": "babel-node index.js"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }

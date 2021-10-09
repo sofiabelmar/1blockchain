@@ -5,5 +5,10 @@ const {name, version, author, description } = PKG;
 
 console.log(`${name} ${version} ${author} ${description}`); 
 
-const block = new Block(Date.now(),'pr3v10sh4sh','h4sh','d4t45');
-console.log(block.toString());
+const { genesis } = Block;
+
+const block1 = Block.mine(genesis, 'transact1');
+console.log(block1.toString());
+
+const block2 = Block.mine(genesis, 'transact2');
+console.log(block2.toString());
